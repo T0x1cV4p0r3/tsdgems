@@ -122,10 +122,11 @@
     
     .nav-menu {
       display: flex;
-      gap: 3rem;
+      gap: 2rem;
       align-items: center;
       flex: 1;
       justify-content: center;
+      flex-wrap: wrap;
     }
     
     .nav-toggle {
@@ -168,11 +169,15 @@
       color: #f8f9fa;
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.95rem;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
       transition: all 0.3s ease;
       position: relative;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
     }
     
     nav a:hover {
@@ -911,7 +916,7 @@
     }
     
     .faq-item.active .faq-answer {
-      max-height: 200px;
+      max-height: 500px;
       padding: 1.5rem 2rem;
     }
     
@@ -955,6 +960,8 @@
         border-top: 1px solid rgba(255, 215, 0, 0.2);
         justify-content: flex-start;
         align-items: center;
+        max-height: 80vh;
+        overflow-y: auto;
       }
       
       .nav-menu.active {
@@ -969,6 +976,8 @@
         text-align: center;
         border-bottom: 1px solid rgba(255, 215, 0, 0.1);
         max-width: 300px;
+        justify-content: center;
+        font-size: 1rem;
       }
       
       .nav-menu a:last-child {
@@ -1163,6 +1172,7 @@
       
       .faq-item.active .faq-answer {
         padding: 1.2rem 1.5rem;
+        max-height: 800px;
       }
     }
     
@@ -1344,6 +1354,7 @@
       
       .faq-item.active .faq-answer {
         padding: 1rem 1.2rem;
+        max-height: 1000px;
       }
     }
     
@@ -1404,10 +1415,12 @@
       </div>
       
       <div class="nav-menu" id="navMenu">
-        <a href="#start">Getting Started</a>
-        <a href="#about">About</a>
-        <a href="#explore">Explore</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#start">🚀 Getting Started</a>
+        <a href="#about">💎 About</a>
+        <a href="#explore">🔍 Explore</a>
+        <a href="#gallery">🖼️ Gallery</a>
+        <a href="#rewards">🔥 Rewards</a>
+        <a href="#faq">❓ FAQ</a>
       </div>
       
       <div class="nav-toggle" id="navToggle">
