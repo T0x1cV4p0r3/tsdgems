@@ -1406,6 +1406,103 @@
         padding: 0.8rem 1.5rem;
       }
     }
+    
+    /* Header Countdown Styles */
+    .header-countdown {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .header-countdown .countdown-timer {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .header-countdown .countdown-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 80px;
+    }
+    
+    .header-countdown .countdown-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffd700;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    
+    .header-countdown .countdown-label {
+      font-size: 0.8rem;
+      color: #adb5bd;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    
+    .header-countdown .countdown-subtitle {
+      font-size: 1rem;
+      color: #e9ecef;
+      font-weight: 400;
+      margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .header-countdown {
+        margin: 1.5rem 0;
+      }
+      
+      .header-countdown .countdown-timer {
+        gap: 1rem;
+      }
+      
+      .header-countdown .countdown-item {
+        min-width: 70px;
+      }
+      
+      .header-countdown .countdown-number {
+        font-size: 2rem;
+      }
+      
+      .header-countdown .countdown-label {
+        font-size: 0.7rem;
+      }
+      
+      .header-countdown .countdown-subtitle {
+        font-size: 0.9rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-countdown {
+        margin: 1rem 0;
+      }
+      
+      .header-countdown .countdown-timer {
+        gap: 0.8rem;
+      }
+      
+      .header-countdown .countdown-item {
+        min-width: 60px;
+      }
+      
+      .header-countdown .countdown-number {
+        font-size: 1.8rem;
+      }
+      
+      .header-countdown .countdown-label {
+        font-size: 0.6rem;
+      }
+      
+      .header-countdown .countdown-subtitle {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1418,9 +1515,9 @@
       </div>
       
       <div class="nav-menu" id="navMenu">
-        <a href="#start">🚀 Getting Started</a>
+        <a href="#start">🚀 Start</a>
         <a href="#about">💎 About</a>
-        <a href="#explore">🔍 Explore</a>
+        <a href="#vision">🎯 Vision</a>
         <a href="#gallery">🖼️ Gallery</a>
         <a href="#rewards">🔥 Rewards</a>
         <a href="#faq">❓ FAQ</a>
@@ -1437,6 +1534,29 @@
   <header>
     <h1>TSDMEDIAGEMS</h1>
     <p>Digital Gem Mining and NFT Collecting Reimagined</p>
+    
+    <!-- Countdown in Header -->
+    <div class="header-countdown" id="headerCountdown">
+      <div class="countdown-timer" id="countdownTimer">
+        <div class="countdown-item">
+          <div class="countdown-number" id="days">--</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours">--</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes">--</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds">--</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+      <p class="countdown-subtitle">Collection Launch: July 21st, 2025 at 12:00 CEST (Central European Summer Time)</p>
+    </div>
     
     <div class="scroll-indicator">
       <div class="scroll-arrow">
@@ -1464,6 +1584,33 @@
     <p>The focus is on high-quality digital craftsmanship and collectible value. <strong>TSDGEMS</strong> offers a new way to collect and own gemstones — digitally, securely, and without physical limitations.</p>
     <p><em>Unlock the beauty. Own the rarity.</em></p>
     <p><strong>TSDMEDIAGEMS.</strong></p>
+  </section>
+
+  <section id="vision">
+    <h2>Our Vision for the Collection</h2>
+    <p>At TSDMEDIAGEMS, we're building more than just a digital gem collection — we're creating a sustainable ecosystem that puts community governance at its core.</p>
+    
+    <div class="highlight">
+      <h3>🏗️ Two-Year Strategic Framework</h3>
+      <p>Our mining farms are designed with a <strong>two-year operational term</strong>, providing stability and long-term value for our community. This structured approach ensures consistent token distribution while maintaining the integrity of our ecosystem.</p>
+    </div>
+    
+    <div class="highlight">
+      <h3>🪙 TSDM Token: Distribution Mechanism</h3>
+      <p>The TSDM token serves as our primary <strong>NFT distribution mechanism</strong>. Rather than being a speculative asset, it's designed to facilitate the fair allocation of digital assets within our ecosystem. We hold 50% of all tokens, ensuring we maintain alignment with our community's interests.</p>
+    </div>
+    
+    <div class="highlight">
+      <h3>🗳️ Community-Driven Governance</h3>
+      <p>Following the collection launch, we will implement a <strong>community voting system</strong> that puts the future of our token allocation directly in your hands. This democratic approach ensures that major decisions about token utilization are made collectively by those who are most invested in our ecosystem's success.</p>
+    </div>
+    
+    <div class="highlight">
+      <h3>🚀 Ecosystem Expansion Plans</h3>
+      <p>We have ambitious plans to build additional features and utilities around this collection. These developments will be guided by community feedback and designed to enhance the overall value proposition of the TSDMEDIAGEMS ecosystem.</p>
+    </div>
+    
+    <p><em>Join us in shaping the future of digital gem collecting — where community meets innovation.</em></p>
   </section>
 
   <section id="explore">
@@ -1911,6 +2058,47 @@
         }
       });
     });
+    
+    // Countdown Timer
+    function updateCountdown() {
+      // Set the target date: July 21st, 2025 at 12:00 PM CEST (Central European Summer Time)
+      const targetDate = new Date('2025-07-21T12:00:00+02:00'); // CEST timezone
+      const now = new Date();
+      
+      const timeDifference = targetDate - now;
+      
+      if (timeDifference > 0) {
+        // Calculate time units
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        
+        // Update the countdown display
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        
+        // Show countdown timer, hide completed message
+        document.getElementById('countdownTimer').style.display = 'flex';
+        document.getElementById('countdownCompleted').style.display = 'none';
+      } else {
+        // Countdown has ended - remove the entire header countdown
+        const headerCountdown = document.getElementById('headerCountdown');
+        if (headerCountdown) {
+          headerCountdown.remove();
+        }
+        // Stop the countdown interval
+        clearInterval(countdownInterval);
+      }
+    }
+    
+    // Update countdown every second
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    
+    // Initial countdown update
+    updateCountdown();
     
     // Diamond Rain Animation
     function createDiamond() {
