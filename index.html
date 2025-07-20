@@ -1452,6 +1452,58 @@
       margin: 0;
     }
     
+    /* Header CTA Button */
+    .header-cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    
+    .header-cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2rem;
+      background: linear-gradient(45deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.08));
+      border: 2px solid rgba(255, 215, 0, 0.4);
+      border-radius: 15px;
+      text-decoration: none;
+      color: #ffd700;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+    
+    .header-cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    .header-cta-button:hover::before {
+      left: 100%;
+    }
+    
+    .header-cta-button:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 
+        0 15px 30px rgba(255, 215, 0, 0.3),
+        0 0 20px rgba(255, 215, 0, 0.2);
+      border-color: rgba(255, 215, 0, 0.7);
+      background: linear-gradient(45deg, rgba(255, 215, 0, 0.25), rgba(255, 215, 0, 0.15));
+    }
+    
+    .header-cta-button .cta-icon {
+      font-size: 1.3rem;
+    }
+    
     @media (max-width: 768px) {
       .header-countdown {
         margin: 1.5rem 0;
@@ -1475,6 +1527,15 @@
       
       .header-countdown .countdown-subtitle {
         font-size: 0.9rem;
+      }
+      
+      .header-cta {
+        margin-top: 1.5rem;
+      }
+      
+      .header-cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
       }
     }
     
@@ -1500,6 +1561,15 @@
       }
       
       .header-countdown .countdown-subtitle {
+        font-size: 0.8rem;
+      }
+      
+      .header-cta {
+        margin-top: 1rem;
+      }
+      
+      .header-cta-button {
+        padding: 0.6rem 1rem;
         font-size: 0.8rem;
       }
     }
@@ -1556,6 +1626,14 @@
         </div>
       </div>
       <p class="countdown-subtitle">Collection Launch: July 21st, 2025 at 12:00 CEST (Central European Summer Time)</p>
+      
+      <!-- Discord CTA Button -->
+      <div class="header-cta">
+        <a href="https://discord.gg/AfDsnev7kH" target="_blank" class="header-cta-button">
+          <span class="cta-icon">🎮</span>
+          <span>Join Discord Community</span>
+        </a>
+      </div>
     </div>
     
     <div class="scroll-indicator">
@@ -1656,7 +1734,7 @@
     <div class="gallery">
       <div class="gallery-item">
         <a href="https://neftyblocks.com/templates/tsdmediagems/894387" target="_blank">
-          <img src="tsdmediagems/(1).png" alt="TSDMEDIAGEMS Diamond NFT" />
+          <img src="TSDMEDIAGEMS/(1).png" alt="TSDMEDIAGEMS Diamond NFT" />
           <p>Diamond #894387</p>
         </a>
       </div>
